@@ -50,9 +50,7 @@ export default function Gallery() {
           {photos.map((photo, i) => (
             <div
               key={i}
-              className={`relative overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition-shadow ${
-                i === 0 || i === 5 ? "row-span-2 aspect-[3/4]" : "aspect-square"
-              }`}
+              className="relative overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition-shadow aspect-square"
             >
               <Image
                 src={photo.src}
